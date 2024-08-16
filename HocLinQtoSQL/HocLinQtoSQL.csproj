@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D31E0A7-A1BD-4623-BA2B-CBD6591490D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HocLinQtoSQL</RootNamespace>
+    <AssemblyName>HocLinQtoSQL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSDLTest.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSDLTest.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapNhatGiaProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatGiaProcedure.Designer.cs">
+      <DependentUpon>frmCapNhatGiaProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiaMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiaMoi.Designer.cs">
+      <DependentUpon>frmGiaMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLayToanBoSanPhamProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLayToanBoSanPhamProcedure.Designer.cs">
+      <DependentUpon>frmLayToanBoSanPhamProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocThuocTinhSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocThuocTinhSanPham.Designer.cs">
+      <DependentUpon>frmLocThuocTinhSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLuuMoiNhieuSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLuuMoiNhieuSanPham.Designer.cs">
+      <DependentUpon>frmLuuMoiNhieuSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLuuMoiSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLuuMoiSanPham.Designer.cs">
+      <DependentUpon>frmLuuMoiSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLuuMoiDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLuuMoiDanhMuc.Designer.cs">
+      <DependentUpon>frmLuuMoiDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuaDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuaDanhMuc.Designer.cs">
+      <DependentUpon>frmSuaDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuaSanPham.Designer.cs">
+      <DependentUpon>frmSuaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemSanPhamProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSanPhamProcedure.Designer.cs">
+      <DependentUpon>frmThemSanPhamProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiemVaSapXep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemVaSapXep.Designer.cs">
+      <DependentUpon>frmTimKiemVaSapXep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimSanPhamTheoDonGiaMethodSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimSanPhamTheoDonGiaMethodSyntax.Designer.cs">
+      <DependentUpon>frmTimSanPhamTheoDonGiaMethodSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimSanPhamTheoDonGiaQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimSanPhamTheoDonGiaQuerySyntax.Designer.cs">
+      <DependentUpon>frmTimSanPhamTheoDonGiaQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanDanhMucMethodSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanDanhMucMethodSyntax.Designer.cs">
+      <DependentUpon>frmTruyVanDanhMucMethodSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanDanhMucQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanDanhMucQuerySyntax.Designer.cs">
+      <DependentUpon>frmTruyVanDanhMucQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanSanphamMethodSynTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanSanphamMethodSynTax.Designer.cs">
+      <DependentUpon>frmTruyVanSanphamMethodSynTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamQuerySyntax.Designer.cs">
+      <DependentUpon>frmTruyVanSanPhamQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamTheoDanhMucMethodSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamTheoDanhMucMethodSyntax.Designer.cs">
+      <DependentUpon>frmTruyVanSanPhamTheoDanhMucMethodSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamTheoDanhMucQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTruyVanSanPhamTheoDanhMucQuerySyntax.Designer.cs">
+      <DependentUpon>frmTruyVanSanPhamTheoDanhMucQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemChiTietDanhMucMethodSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemChiTietDanhMucMethodSyntax.Designer.cs">
+      <DependentUpon>frmXemChiTietDanhMucMethodSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemChiTietDanhMucQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemChiTietDanhMucQuerySyntax.Designer.cs">
+      <DependentUpon>frmXemChiTietDanhMucQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPham.Designer.cs">
+      <DependentUpon>frmXemChiTietSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPhamProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPhamProcedure.Designer.cs">
+      <DependentUpon>frmXemChiTietSanPhamProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPhamQuerySyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemChiTietSanPhamQuerySyntax.Designer.cs">
+      <DependentUpon>frmXemChiTietSanPhamQuerySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXoaDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXoaDanhMuc.Designer.cs">
+      <DependentUpon>frmXoaDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXoaNhieuSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXoaNhieuSanPham.Designer.cs">
+      <DependentUpon>frmXoaNhieuSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXoaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXoaSanPham.Designer.cs">
+      <DependentUpon>frmXoaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXoaSanPhamProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXoaSanPhamProcedure.Designer.cs">
+      <DependentUpon>frmXoaSanPhamProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCapNhatGiaProcedure.resx">
+      <DependentUpon>frmCapNhatGiaProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiaMoi.resx">
+      <DependentUpon>frmGiaMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLayToanBoSanPhamProcedure.resx">
+      <DependentUpon>frmLayToanBoSanPhamProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocThuocTinhSanPham.resx">
+      <DependentUpon>frmLocThuocTinhSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLuuMoiNhieuSanPham.resx">
+      <DependentUpon>frmLuuMoiNhieuSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLuuMoiSanPham.resx">
+      <DependentUpon>frmLuuMoiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLuuMoiDanhMuc.resx">
+      <DependentUpon>frmLuuMoiDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuaDanhMuc.resx">
+      <DependentUpon>frmSuaDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuaSanPham.resx">
+      <DependentUpon>frmSuaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSanPhamProcedure.resx">
+      <DependentUpon>frmThemSanPhamProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemVaSapXep.resx">
+      <DependentUpon>frmTimKiemVaSapXep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimSanPhamTheoDonGiaMethodSyntax.resx">
+      <DependentUpon>frmTimSanPhamTheoDonGiaMethodSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimSanPhamTheoDonGiaQuerySyntax.resx">
+      <DependentUpon>frmTimSanPhamTheoDonGiaQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanDanhMucMethodSyntax.resx">
+      <DependentUpon>frmTruyVanDanhMucMethodSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanDanhMucQuerySyntax.resx">
+      <DependentUpon>frmTruyVanDanhMucQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanSanphamMethodSynTax.resx">
+      <DependentUpon>frmTruyVanSanphamMethodSynTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanSanPhamQuerySyntax.resx">
+      <DependentUpon>frmTruyVanSanPhamQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanSanPhamTheoDanhMucMethodSyntax.resx">
+      <DependentUpon>frmTruyVanSanPhamTheoDanhMucMethodSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTruyVanSanPhamTheoDanhMucQuerySyntax.resx">
+      <DependentUpon>frmTruyVanSanPhamTheoDanhMucQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemChiTietDanhMucMethodSyntax.resx">
+      <DependentUpon>frmXemChiTietDanhMucMethodSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemChiTietDanhMucQuerySyntax.resx">
+      <DependentUpon>frmXemChiTietDanhMucQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemChiTietSanPham.resx">
+      <DependentUpon>frmXemChiTietSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemChiTietSanPhamProcedure.resx">
+      <DependentUpon>frmXemChiTietSanPhamProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemChiTietSanPhamQuerySyntax.resx">
+      <DependentUpon>frmXemChiTietSanPhamQuerySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoaDanhMuc.resx">
+      <DependentUpon>frmXoaDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoaNhieuSanPham.resx">
+      <DependentUpon>frmXoaNhieuSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoaSanPham.resx">
+      <DependentUpon>frmXoaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoaSanPhamProcedure.resx">
+      <DependentUpon>frmXoaSanPhamProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="CSDLTest.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CSDLTest.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CSDLTest.dbml.layout">
+      <DependentUpon>CSDLTest.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

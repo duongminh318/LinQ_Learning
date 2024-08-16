@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CSDLTest" Class="CSDLTestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHTRAN;Initial Catalog=CSDLTest;Persist Security Info=True;User ID=sa" SettingsObjectName="BaiTapTongHop_QLSP.Properties.Settings" SettingsPropertyName="CSDLTestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DanhMuc" Member="DanhMucs">
+    <Type Name="DanhMuc">
+      <Column Name="MaDanhMuc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDanhMuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DanhMuc_SanPham" Member="SanPhams" ThisKey="MaDanhMuc" OtherKey="MaDanhMuc" Type="SanPham" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanPham" Member="SanPhams">
+    <Type Name="SanPham">
+      <Column Name="Ma" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDanhMuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DanhMuc_SanPham" Member="DanhMuc" ThisKey="MaDanhMuc" OtherKey="MaDanhMuc" Type="DanhMuc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CapNhatGia" Method="CapNhatGia">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Parameter Name="dongia" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaSanPham" Method="XoaSanPham">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietSanPham" Method="ChiTietSanPham">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ChiTietSanPhamResult">
+      <Column Name="Ma" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDanhMuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayToanBoSanPham" Method="LayToanBoSanPham">
+    <ElementType Name="LayToanBoSanPhamResult">
+      <Column Name="Ma" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDanhMuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ThemSanPham" Method="ThemSanPham">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ten" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gia" Type="System.Int32" DbType="Int" />
+    <Parameter Name="madm" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

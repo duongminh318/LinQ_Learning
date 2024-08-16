@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CSDLSach" Class="CSDLSachDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHTRAN;Initial Catalog=CSDLSach;Persist Security Info=True;User ID=sa" SettingsObjectName="BaiTapRenLuyen_QuanLySach.Properties.Settings" SettingsPropertyName="CSDLSachConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Book" Member="Books">
+    <Type Name="Book">
+      <Column Name="BookCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BookName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PublisherCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Publisher_Book" Member="Publisher" ThisKey="PublisherCode" OtherKey="PublisherCode" Type="Publisher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Publisher" Member="Publishers">
+    <Type Name="Publisher">
+      <Column Name="PublisherCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PublisherName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Publisher_Book" Member="Books" ThisKey="PublisherCode" OtherKey="PublisherCode" Type="Book" />
+    </Type>
+  </Table>
+</Database>
