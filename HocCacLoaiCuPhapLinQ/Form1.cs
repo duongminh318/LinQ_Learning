@@ -22,6 +22,14 @@ namespace HocCacLoaiCuPhapLinQ
             var dsChan = from x in arrData
                          where x % 2 == 0
                          select x;
+            string result = "";
+            foreach(var item in dsChan)
+            {
+                result += item+ "---";
+               
+            }
+            label1.Text = result ;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
