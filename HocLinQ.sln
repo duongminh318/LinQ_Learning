@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{63472264-4A84-4E29-8B6C-E97805BB95F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocGenerics", "HocGenerics\HocGenerics.csproj", "{4604DC52-6118-4807-9852-1256D66D93DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.HocGenerics", "HocGenerics\4.HocGenerics.csproj", "{4604DC52-6118-4807-9852-1256D66D93DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocImplicitType", "HocImplicitType\HocImplicitType.csproj", "{47160F2C-F7E7-48F7-8847-F0FD3974071C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.HocImplicitType", "HocImplicitType\5.HocImplicitType.csproj", "{47160F2C-F7E7-48F7-8847-F0FD3974071C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocObjectInitialzer", "HocObjectInitialzer\HocObjectInitialzer.csproj", "{8057D18E-8D19-48A4-9022-04F154FA825A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.HocObjectInitialzer", "HocObjectInitialzer\6.HocObjectInitialzer.csproj", "{8057D18E-8D19-48A4-9022-04F154FA825A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocAnomousType", "HocAnomousType\HocAnomousType.csproj", "{8A535087-E0DD-4EFF-9C31-19730D21584A}"
 EndProject
@@ -252,5 +252,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E4D9D4F-C63F-49F0-ABA2-A79F64BE2349}
 	EndGlobalSection
 EndGlobal

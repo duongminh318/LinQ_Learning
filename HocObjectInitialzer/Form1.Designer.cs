@@ -41,7 +41,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 25);
+            this.label1.Size = new System.Drawing.Size(55, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã:";
             // 
@@ -50,7 +50,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 25);
+            this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên:";
             // 
@@ -58,14 +58,14 @@
             // 
             this.txtMa.Location = new System.Drawing.Point(114, 17);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(257, 30);
+            this.txtMa.Size = new System.Drawing.Size(257, 36);
             this.txtMa.TabIndex = 2;
             // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(114, 61);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(257, 30);
+            this.txtTen.Size = new System.Drawing.Size(257, 36);
             this.txtTen.TabIndex = 2;
             // 
             // btnLuu
@@ -81,17 +81,17 @@
             // lstSanPham
             // 
             this.lstSanPham.FormattingEnabled = true;
-            this.lstSanPham.ItemHeight = 25;
+            this.lstSanPham.ItemHeight = 29;
             this.lstSanPham.Location = new System.Drawing.Point(18, 183);
             this.lstSanPham.Name = "lstSanPham";
-            this.lstSanPham.Size = new System.Drawing.Size(411, 129);
+            this.lstSanPham.Size = new System.Drawing.Size(411, 120);
             this.lstSanPham.TabIndex = 4;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 327);
+            this.ClientSize = new System.Drawing.Size(502, 337);
             this.Controls.Add(this.lstSanPham);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.txtTen);
@@ -99,7 +99,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

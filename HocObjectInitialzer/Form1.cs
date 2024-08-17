@@ -19,11 +19,14 @@ namespace HocObjectInitialzer
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+        // VỪA KHỞI TẠO, KHAI BÁO TƯỜNG MINH
             /*SanPham sp = new SanPham()
             {
                 Ma=int.Parse(txtMa.Text),
                 Ten=txtTen.Text
             };*/
+
+        // KHAI BÁO KO TƯỜNG MINH
             /*var sp = new SanPham()
             {
                 Ma = int.Parse(txtMa.Text),
@@ -33,6 +36,11 @@ namespace HocObjectInitialzer
             sp.Ma = int.Parse(txtMa.Text);
             sp.Ten = txtTen.Text;
             lstSanPham.Items.Add(sp.Ma+"-"+sp.Ten);
+            // VIẾT CÁI GÌ ĐÓ
+
+
+
+
         }
     }
 }

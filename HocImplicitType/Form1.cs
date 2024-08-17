@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace HocImplicitType
 {
+    //nội suy datatype , giống javascript
     public partial class Form1 : Form
     {
         public Form1()
@@ -32,7 +33,26 @@ namespace HocImplicitType
 
             var t="Putin";
             t = "Kim jong un";
-            t = 5.5;
+            // can not change datatype
+          //  t = 5.5; 
+        }
+
+        // Can not use as variable parameter
+        /*void function1(var x)
+        {
+
+        }*/
+        // Can not use as return type
+        /*var function1()
+        {
+            var x = 5;
+            return x;
+        }*/
+
+
+        void function1(int x)
+        {
+
         }
         void function1(float x)
         {

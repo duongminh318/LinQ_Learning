@@ -20,6 +20,13 @@ namespace HelloWorld
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-        }        
+        }
+        
+        // viết cái gì đó
+    
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello World");
+        }
     }
 }
