@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1.HocDelegate", "HocDeleg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.2.HocDelegate_ListBox", "HocDelegate_ListBox\9.2.HocDelegate_ListBox.csproj", "{DF1AE16C-83DF-458C-AB04-5C0692E62856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocLambdaExpression", "HocLambdaExpression\HocLambdaExpression.csproj", "{6DC3A497-C3EF-4F62-8C10-CDC7C91D4869}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.HocLambdaExpression", "HocLambdaExpression\10.HocLambdaExpression.csproj", "{6DC3A497-C3EF-4F62-8C10-CDC7C91D4869}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocCacLoaiCuPhapLinQ", "HocCacLoaiCuPhapLinQ\HocCacLoaiCuPhapLinQ.csproj", "{D5232650-B4AB-4B94-8DF8-32804A2B837F}"
 EndProject

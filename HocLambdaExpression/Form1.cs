@@ -32,8 +32,10 @@ namespace HocLambdaExpression
                   return x + 2;
               };
             label1.Text = d3(100) + "";
-            TongDelegate d5 = (x, y) => x + y;
+            // viết tường minh ra giống javascript như này
+            TongDelegate d5 = (x, y) => { return x + y; };
             label1.Text += "\nd5=" + d5(3, 4);
+            //hoặc gom gọn lại
             TongDelegate d6 = (x, y) => x - y;
         }
     }

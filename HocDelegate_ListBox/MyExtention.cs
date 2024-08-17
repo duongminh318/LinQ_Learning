@@ -29,7 +29,8 @@ namespace HocDelegate_ListBox
         }
 
 
-        // Phương thức mở rộng (extension method) cho kiểu int, dùng để kiểm tra số nguyên tố
+        // Phương thức mở rộng (extension method) cho kiểu int,
+        // dùng để kiểm tra số nguyên tố
         public static bool IsPrime(this int x)
         {
             int dem = 0; // Biến đếm số lượng ước số của x

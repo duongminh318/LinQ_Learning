@@ -32,7 +32,8 @@ namespace HocDelegate_ListBox
             lstSo.ToSoTrongListBox(x => x % 2 != 0); // Sử dụng biểu thức lambda để kiểm tra số lẻ (x không chia hết cho 2)
         }
 
-        // Sự kiện xử lý khi nhấn nút btnToNguyenTo, tô màu các số nguyên tố trong ListBox
+        // Sự kiện xử lý khi nhấn nút btnToNguyenTo,
+        // tô màu các số nguyên tố trong ListBox
         private void btnToNguyenTo_Click(object sender, EventArgs e)
         {
             lstSo.ToSoTrongListBox(x => x.IsPrime()); // Sử dụng phương thức mở rộng IsPrime để kiểm tra số nguyên tố
