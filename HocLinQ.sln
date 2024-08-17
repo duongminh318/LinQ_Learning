@@ -11,13 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.HocImplicitType", "HocImp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.HocObjectInitialzer", "HocObjectInitialzer\6.HocObjectInitialzer.csproj", "{8057D18E-8D19-48A4-9022-04F154FA825A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocAnomousType", "HocAnomousType\HocAnomousType.csproj", "{8A535087-E0DD-4EFF-9C31-19730D21584A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.HocAnomousType", "HocAnomousType\7.HocAnomousType.csproj", "{8A535087-E0DD-4EFF-9C31-19730D21584A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocExtensionMethod", "HocExtensionMethod\HocExtensionMethod.csproj", "{27F0BF4B-AF86-483A-96E6-06A7CFF44944}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.HocExtensionMethod", "HocExtensionMethod\8.HocExtensionMethod.csproj", "{27F0BF4B-AF86-483A-96E6-06A7CFF44944}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocDelegate", "HocDelegate\HocDelegate.csproj", "{DDA2261C-E4CE-4531-8652-DDA524F151E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1.HocDelegate", "HocDelegate\9.1.HocDelegate.csproj", "{DDA2261C-E4CE-4531-8652-DDA524F151E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocDelegate_ListBox", "HocDelegate_ListBox\HocDelegate_ListBox.csproj", "{DF1AE16C-83DF-458C-AB04-5C0692E62856}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.2.HocDelegate_ListBox", "HocDelegate_ListBox\9.2.HocDelegate_ListBox.csproj", "{DF1AE16C-83DF-458C-AB04-5C0692E62856}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocLambdaExpression", "HocLambdaExpression\HocLambdaExpression.csproj", "{6DC3A497-C3EF-4F62-8C10-CDC7C91D4869}"
 EndProject

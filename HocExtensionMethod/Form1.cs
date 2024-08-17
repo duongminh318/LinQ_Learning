@@ -40,6 +40,7 @@ namespace HocExtensionMethod
             teo.Ten = "Tèo";
             teo.NamSinh = new DateTime(1998, 1, 1);
             int t = teo.TinhTuoi();
+            button1.Text = $"Tèo {t} tuổi";
         }
 
         private void Form1_Load(object sender, EventArgs e)

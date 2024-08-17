@@ -16,7 +16,13 @@ namespace HocAnomousType
         {
             InitializeComponent();
         }
-
+/* AnomousType
+ * một object không có class
+ * tự tạo ra class trong quá trình thực thi
+ * sử dụng var
+ * object tương tự js
+ 
+ */
         private void button1_Click(object sender, EventArgs e)
         {
             var x = new {

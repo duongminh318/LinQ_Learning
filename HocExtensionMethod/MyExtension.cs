@@ -8,6 +8,13 @@ using ClassLibrary1;
 
 namespace HocExtensionMethod
 {
+/*Extension Method: thêm 1 method mở rộng cho 1 object hay một thành phần
+* nào đó trong c#
+* >> tự tạo ra cho mình 1 phương thức riêng của element đó
+* >> bất kỳ element nào đều có method đó
+* >> cài vào dữ liệu:int, string..; 
+*       - hoặc các composenent : txt, lable, ...
+*/
     public static class MyExtension
     {
         public static int TinhTongTu1ToiN(this int n)

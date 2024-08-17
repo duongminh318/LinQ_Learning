@@ -54,7 +54,7 @@
             // 
             this.txtN.Location = new System.Drawing.Point(31, 13);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(100, 30);
+            this.txtN.Size = new System.Drawing.Size(100, 36);
             this.txtN.TabIndex = 1;
             // 
             // lblKetQua
@@ -62,7 +62,7 @@
             this.lblKetQua.AutoSize = true;
             this.lblKetQua.Location = new System.Drawing.Point(31, 120);
             this.lblKetQua.Name = "lblKetQua";
-            this.lblKetQua.Size = new System.Drawing.Size(64, 25);
+            this.lblKetQua.Size = new System.Drawing.Size(81, 29);
             this.lblKetQua.TabIndex = 2;
             this.lblKetQua.Text = "label1";
             // 
@@ -71,15 +71,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(227, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 25);
+            this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Chuỗi  1:";
             // 
             // txtChuoi1
             // 
-            this.txtChuoi1.Location = new System.Drawing.Point(318, 17);
+            this.txtChuoi1.Location = new System.Drawing.Point(337, 12);
             this.txtChuoi1.Name = "txtChuoi1";
-            this.txtChuoi1.Size = new System.Drawing.Size(158, 30);
+            this.txtChuoi1.Size = new System.Drawing.Size(158, 36);
             this.txtChuoi1.TabIndex = 4;
             // 
             // label2
@@ -87,15 +87,15 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(227, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 25);
+            this.label2.Size = new System.Drawing.Size(114, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Chuỗi  2:";
             // 
             // txtChuoi2
             // 
-            this.txtChuoi2.Location = new System.Drawing.Point(318, 60);
+            this.txtChuoi2.Location = new System.Drawing.Point(337, 59);
             this.txtChuoi2.Name = "txtChuoi2";
-            this.txtChuoi2.Size = new System.Drawing.Size(158, 30);
+            this.txtChuoi2.Size = new System.Drawing.Size(158, 36);
             this.txtChuoi2.TabIndex = 4;
             // 
             // btnNoi
@@ -113,7 +113,7 @@
             this.lblKetQuaNoiChuoi.AutoSize = true;
             this.lblKetQuaNoiChuoi.Location = new System.Drawing.Point(232, 144);
             this.lblKetQuaNoiChuoi.Name = "lblKetQuaNoiChuoi";
-            this.lblKetQuaNoiChuoi.Size = new System.Drawing.Size(64, 25);
+            this.lblKetQuaNoiChuoi.Size = new System.Drawing.Size(81, 29);
             this.lblKetQuaNoiChuoi.TabIndex = 6;
             this.lblKetQuaNoiChuoi.Text = "label3";
             // 
@@ -121,7 +121,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(31, 236);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 62);
+            this.button1.Size = new System.Drawing.Size(166, 45);
             this.button1.TabIndex = 7;
             this.button1.Text = "Test Sinh Viên";
             this.button1.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(627, 341);
             this.Controls.Add(this.button1);

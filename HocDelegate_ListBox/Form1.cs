@@ -21,8 +21,10 @@ namespace HocDelegate_ListBox
         {
             //xóa các lựa chọn trước đó:
             lstSo.SelectedIndex = -1;
+            //duyệt qua từng số
             for(int i=0;i<lstSo.Items.Count;i++)
             {
+                //convert datatype
                 int x = int.Parse(lstSo.Items[i].ToString());
                 if(x%2==0)
                 {

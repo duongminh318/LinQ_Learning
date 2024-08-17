@@ -17,19 +17,25 @@ namespace HocDelegate_ListBox
             InitializeComponent();
         }
 
-        private void btnToSoChan_Click(object sender, EventArgs e)
+    // Sự kiện xử lý khi nhấn nút btnToSoChan, tô màu các số chẵn trong ListBox
+         private void btnToSoChan_Click(object sender, EventArgs e)
         {
-            lstSo.ToSoTrongListBox(x => x % 2 == 0);
+            // tham số chuyền vào là 1 lamda expression
+            lstSo.ToSoTrongListBox(x => x % 2 == 0); // Sử dụng biểu thức lambda
+                                         // để kiểm tra số chẵn (x chia hết cho 2)
         }
 
+        // Sự kiện xử lý khi nhấn nút btnToSole,
+        // tô màu các số lẻ trong ListBox
         private void btnToSole_Click(object sender, EventArgs e)
         {
-            lstSo.ToSoTrongListBox(x => x % 2 != 0);
+            lstSo.ToSoTrongListBox(x => x % 2 != 0); // Sử dụng biểu thức lambda để kiểm tra số lẻ (x không chia hết cho 2)
         }
 
+        // Sự kiện xử lý khi nhấn nút btnToNguyenTo, tô màu các số nguyên tố trong ListBox
         private void btnToNguyenTo_Click(object sender, EventArgs e)
         {
-            lstSo.ToSoTrongListBox(x=>x.IsPrime());
+            lstSo.ToSoTrongListBox(x => x.IsPrime()); // Sử dụng phương thức mở rộng IsPrime để kiểm tra số nguyên tố
         }
     }
 }
