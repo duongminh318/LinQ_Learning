@@ -78,6 +78,7 @@ namespace HocGenerics
             txtTen.Text = "";
 
             HienThiSinhVien();
+            //ok
         }
 
         private void HienThiSinhVien()
