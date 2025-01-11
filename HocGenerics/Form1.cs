@@ -89,6 +89,7 @@ namespace HocGenerics
                 ListViewItem lvi = new ListViewItem(item.Key + "");
                 lvi.SubItems.Add(item.Value);
                 lvSinhVien.Items.Add(lvi);
+                // 12/01/2025 sẽ học linq
             }
         }
 
