@@ -16,7 +16,8 @@ namespace HocGenerics
         {
             InitializeComponent();
         }
-        List<int> dsInt = new List<int>();
+        List<int> dsInt = new List<int>(); // create 1 list for save number
+        //List<dataType> nameList= new List<dataType> //use save list variables
         private void btnTao_Click(object sender, EventArgs e)
         {
             int n = int.Parse(txtN.Text);
@@ -24,48 +25,49 @@ namespace HocGenerics
             for(int i=0;i<n;i++)
             {
                 int x = rd.Next(100);
-                dsInt.Add(x);
+                dsInt.Add(x);           // add random number just created to list
             }
-            dsInt.AddRange(new int[] { 113, 114 });
+            dsInt.AddRange(new int[] { 113, 114 }); // add 2 defaul number to list
             lstSo.Items.Clear();
             for(int i=0;i<dsInt.Count;i++)
             {
-                lstSo.Items.Add(dsInt[i]);
+                lstSo.Items.Add(dsInt[i]);     // add number in list to ListView
                 // 
-            }
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if(lstSo.SelectedIndex!=-1)
-            {
-                dsInt[lstSo.SelectedIndex] = int.Parse(txtGiaTri.Text);
-                lstSo.Items[lstSo.SelectedIndex] = dsInt[lstSo.SelectedIndex];
             }
         }
 
         private void lstSo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(lstSo.SelectedIndex!=-1)
+            if (lstSo.SelectedIndex != -1) // choice == true
             {
-                txtGiaTri.Text = dsInt[lstSo.SelectedIndex] + "";
+                txtGiaTri.Text = dsInt[lstSo.SelectedIndex] + ""; // get value number been choice in listView
             }
         }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if(lstSo.SelectedIndex!=-1)  // choice==true
+            {
+                dsInt[lstSo.SelectedIndex] = int.Parse(txtGiaTri.Text); // edit number in List number
+                lstSo.Items[lstSo.SelectedIndex] = dsInt[lstSo.SelectedIndex]; // set number in listView= number in List Number
+            }
+        }
+
+       
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (lstSo.SelectedIndex != -1)
             {
-                dsInt.RemoveAt(lstSo.SelectedIndex);
-                lstSo.Items.Clear();
+                dsInt.RemoveAt(lstSo.SelectedIndex); // remove on list
+                lstSo.Items.Clear();        // clear in ListView
                 for (int i = 0; i < dsInt.Count; i++)
                 {
-                    lstSo.Items.Add(dsInt[i]);
+                    lstSo.Items.Add(dsInt[i]); // loading again ListView
                 }
             }
             else
             {
-                MessageBox.Show("Chưa chọn, không xóa được");
+                MessageBox.Show("Thím Chưa chọn, không xóa được");
             }
         }
         Dictionary<int, string> dicSV = new Dictionary<int, string>();
