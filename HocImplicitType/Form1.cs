@@ -49,7 +49,7 @@ namespace HocImplicitType
             return x;
         }*/
 
-
+        //mai học cái này
         void function1(int x)
         {
 
