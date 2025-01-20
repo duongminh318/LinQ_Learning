@@ -17,7 +17,7 @@ namespace HocAnomousType
             InitializeComponent();
         }
 /* AnomousType
- * một object không có class
+ * một object vô danh không có tên class
  * tự tạo ra class trong quá trình thực thi
  * sử dụng var
  * object tương tự js
