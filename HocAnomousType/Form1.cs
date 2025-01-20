@@ -34,5 +34,17 @@ namespace HocAnomousType
             label1.Text = x.Ma + "-" + x.Ten + "->" + x.Gia;
             label1.Text += "\n" + x.GetType().ToString();
         }
+
+        private void btnCreat_Click(object sender, EventArgs e)
+        {
+            var Win = new
+            {
+                Name = "alex Win",
+                Age = 22
+
+            };
+            label2.Text=Win.Name.ToUpper();
+            label2.Text += "\n" + Win.Age.ToString();
+        }
     }
 }

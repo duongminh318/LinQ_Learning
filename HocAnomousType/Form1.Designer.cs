@@ -30,6 +30,8 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCreat = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -50,15 +52,35 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
+            // btnCreat
+            // 
+            this.btnCreat.Location = new System.Drawing.Point(13, 167);
+            this.btnCreat.Name = "btnCreat";
+            this.btnCreat.Size = new System.Drawing.Size(296, 40);
+            this.btnCreat.TabIndex = 2;
+            this.btnCreat.Text = "create anonymous type";
+            this.btnCreat.UseVisualStyleBackColor = true;
+            this.btnCreat.Click += new System.EventHandler(this.btnCreat_Click);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(18, 260);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(330, 86);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 380);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnCreat);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -69,6 +91,8 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCreat;
+        private System.Windows.Forms.Label label2;
     }
 }
 
