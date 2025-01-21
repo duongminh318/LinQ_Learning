@@ -27,6 +27,7 @@ namespace HocExtensionMethod
 
         private void btnNoi_Click(object sender, EventArgs e)
         {
+            // gọi hàm extension method
             lblKetQuaNoiChuoi.Text = 
                 txtChuoi1.Text.NoiChuoi(txtChuoi2.Text);
 
@@ -38,7 +39,7 @@ namespace HocExtensionMethod
             SinhVien teo = new SinhVien();
             teo.Ma = 1;
             teo.Ten = "Tèo";
-            teo.NamSinh = new DateTime(1998, 1, 1);
+            teo.NamSinh = new DateTime(1999, 8, 13);
             int t = teo.TinhTuoi();
             button1.Text = $"Tèo {t} tuổi";
         }
@@ -46,6 +47,7 @@ namespace HocExtensionMethod
         private void Form1_Load(object sender, EventArgs e)
         {
             btnNoi.ThayDoiMauNen();
+            btnTinhTong.ThayDoiMauNen();
         }
     }
 }
