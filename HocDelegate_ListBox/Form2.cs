@@ -30,6 +30,7 @@ namespace HocDelegate_ListBox
         private void btnToSole_Click(object sender, EventArgs e)
         {
             lstSo.ToSoTrongListBox(x => x % 2 != 0); // Sử dụng biểu thức lambda để kiểm tra số lẻ (x không chia hết cho 2)
+            // x là từng số trong listbox
         }
 
         // Sự kiện xử lý khi nhấn nút btnToNguyenTo,
