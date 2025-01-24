@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace HocLazyLoading
 {
+    /*Thực thi trì hoãn và tải chậm*/
+    /*Deferred Execution = LINQ hoãn thực thi đến khi cần.
+    Lazy Loading = EF tải dữ liệu liên quan khi cần thiết.*/
     public partial class Form1 : Form
     {
         public Form1()
@@ -61,7 +64,7 @@ namespace HocLazyLoading
             source.Add(114);
             source.Add(113);
             source.Add(116);
-
+            //hiển thị kết quả ra 
             // Duyệt qua từng phần tử trong danh sách values (kết quả truy vấn đã thực thi trước đó)
             foreach (var c in values)
             {
