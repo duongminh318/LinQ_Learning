@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.HocCacLoaiCuPhapLinQ", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.HocLazyLoading", "HocLazyLoading\12.HocLazyLoading.csproj", "{53972BC3-4F1D-4D9A-9E88-94239E68BD1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapRenLuyenKyThuatLinQ", "BaiTapRenLuyenKyThuatLinQ\BaiTapRenLuyenKyThuatLinQ.csproj", "{785D15AD-6F3D-4957-A5ED-A2CAE03DC009}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.BaiTapRenLuyenKyThuatLinQ", "BaiTapRenLuyenKyThuatLinQ\13.BaiTapRenLuyenKyThuatLinQ.csproj", "{785D15AD-6F3D-4957-A5ED-A2CAE03DC009}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocForeach", "HocForeach\HocForeach.csproj", "{67B8E670-0444-4EE5-BCE9-02FAC2442EC6}"
 EndProject
