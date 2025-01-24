@@ -33,6 +33,7 @@ namespace HocCacLoaiCuPhapLinQ
             InitializeComponent();
         }
         int[] arrData = { 4,6,1,7,9,1,2,0};
+        //query syntax
         private void button1_Click(object sender, EventArgs e)
         {
             var dsChan = from x in arrData  // chọn ra các số chẵn trong mảng
@@ -53,11 +54,14 @@ namespace HocCacLoaiCuPhapLinQ
             var dsChan = from x in arrData where x % 2 == 0 select x;
         }
 
+
+        //method syntax
         private void button3_Click(object sender, EventArgs e)
         {
             var dsChan = arrData.Where(x => x % 2 == 0);
         }
 
+        // mix
         private void button4_Click(object sender, EventArgs e)
         {
             var dsLe = (from x in arrData
