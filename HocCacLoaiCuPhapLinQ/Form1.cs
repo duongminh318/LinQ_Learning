@@ -10,6 +10,22 @@ using System.Windows.Forms;
 
 namespace HocCacLoaiCuPhapLinQ
 {
+    /*
+     * Syntax in LinQ
+     * query syntax: giống như câu lệnh sql, from x in table, where điều kiện, select lấy ra cái gì đó
+         * var result = from variable in source // Nguồn dữ liệu
+                 where condition          // Điều kiện lọc (tùy chọn)
+                 orderby sorting          // Sắp xếp (tùy chọn)
+                 select projection;       // Chọn kết quả (tùy chọn)
+
+     * method syntax: sử dụng lambda expresion trong câu lênh
+         * var result = source
+        .Where(condition)       // Lọc dữ liệu (tùy chọn)
+        .OrderBy(keySelector)    // Sắp xếp (tăng dần - tùy chọn)
+        .Select(projection);     // Chọn kết quả (tùy chọn)
+
+     * mix: kết hợp cả hai cách trên vào 
+     */
     public partial class Form1 : Form
     {
         public Form1()
@@ -19,13 +35,13 @@ namespace HocCacLoaiCuPhapLinQ
         int[] arrData = { 4,6,1,7,9,1,2,0};
         private void button1_Click(object sender, EventArgs e)
         {
-            var dsChan = from x in arrData
+            var dsChan = from x in arrData  // chọn ra các số chẵn trong mảng
                          where x % 2 == 0
                          select x;
-            string result = "";
-            foreach(var item in dsChan)
+            string result = ""; // chuỗi rỗng để nữa in ra mảng chẵn
+            foreach(var item in dsChan) // duyệt mảng
             {
-                result += item+ "---";
+                result += item+ "---"; // nỗi chuỗi
                
             }
             label1.Text = result ;
