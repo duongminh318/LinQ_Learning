@@ -46,7 +46,7 @@ namespace HocLazyLoading
                 // Kết quả cuối cùng: "A", "B", "C", và "D" sẽ được thêm vào listBox1.Items.
             }
         }
-/* KHÔNG SỬ DỤNG LAZY LOADING DO CÓ TOLIST*/
+        /* KHÔNG SỬ DỤNG Deferred Execution DO CÓ TOLIST*/
         private void button2_Click(object sender, EventArgs e)
         {
             // Tạo một danh sách các số nguyên từ 1 đến 9
