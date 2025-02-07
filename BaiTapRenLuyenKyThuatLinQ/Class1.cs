@@ -14,7 +14,7 @@ namespace BaiTapRenLuyenKyThuatLinQ
     public static class Class1
     {
         // Kiểm tra một số nguyên n có phải là số nguyên tố hay không
-        public static bool LaNguyenTo(this int n)
+        public static bool LaNguyenTo(this int n) // extension method trên int
         {
             if (n == 0 || n == 1)
                 return false; // 0 và 1 không phải số nguyên tố.
@@ -29,7 +29,7 @@ namespace BaiTapRenLuyenKyThuatLinQ
         }
 
         // Trả về danh sách các số nguyên tố từ 2 đến n
-        public static List<int> DanhSachSoNguyenTo(this int n)
+        public static List<int> DanhSachSoNguyenTo(this int n) // extension method của int
         {
             List<int> dsNT = new List<int>(); // Tạo danh sách chứa các số nguyên tố.
             for (int i = 2; i <= n; i++) // Duyệt từ 2 đến n.
