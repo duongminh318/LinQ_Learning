@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.HocForeach", "HocForeach
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.HocExists", "HocExists\15.HocExists.csproj", "{E00CE574-2656-439B-9F77-05209F32A16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocFind", "HocFind\HocFind.csproj", "{99A59E1F-B190-4397-B77D-589513B97E3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.HocFind", "HocFind\16.HocFind.csproj", "{99A59E1F-B190-4397-B77D-589513B97E3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocFindAll", "HocFindAll\HocFindAll.csproj", "{B1988FD9-15CC-4CAC-BE3A-8AA89868AADF}"
 EndProject
