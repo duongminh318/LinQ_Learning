@@ -12,7 +12,7 @@ namespace HocLazyLoading
 {
     /*Thực thi trì hoãn và tải chậm*/
     /*Deferred Execution = LINQ hoãn thực thi đến khi cần.
-    Lazy Loading = EF tải dữ liệu liên quan khi cần thiết.*/
+    Lazy Loading = EF tải dữ liệu liên quan khi cần thiết. (lười loading) */
     public partial class Form1 : Form
     {
         public Form1()
