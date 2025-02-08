@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.BaiTapRenLuyenKyThuatLin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.HocForeach", "HocForeach\14.HocForeach.csproj", "{67B8E670-0444-4EE5-BCE9-02FAC2442EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocExists", "HocExists\HocExists.csproj", "{E00CE574-2656-439B-9F77-05209F32A16C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.HocExists", "HocExists\15.HocExists.csproj", "{E00CE574-2656-439B-9F77-05209F32A16C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocFind", "HocFind\HocFind.csproj", "{99A59E1F-B190-4397-B77D-589513B97E3B}"
 EndProject
