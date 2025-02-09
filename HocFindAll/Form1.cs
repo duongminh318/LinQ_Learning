@@ -12,6 +12,7 @@ namespace HocFindAll
 {
     public partial class Form1 : Form
     {
+/*FindAll: tìm tất cả các phần tử thoả mãn dk*/
         public Form1()
         {
             InitializeComponent();
