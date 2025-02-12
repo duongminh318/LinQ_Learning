@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.HocFindIndex", "HocFindI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.HocFindLast", "HocFindLast\19.HocFindLast.csproj", "{F8E50320-F931-4022-B58F-5EAEC032BB55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocFindLastIndex", "HocFindLastIndex\HocFindLastIndex.csproj", "{EA269790-0159-4B95-915F-BEBDBDB7C134}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.HocFindLastIndex", "HocFindLastIndex\20.HocFindLastIndex.csproj", "{EA269790-0159-4B95-915F-BEBDBDB7C134}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocRemoveAll", "HocRemoveAll\HocRemoveAll.csproj", "{7E1A082F-D967-4253-9C1A-965910E0F5E2}"
 EndProject
