@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.HocFindLast", "HocFindLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.HocFindLastIndex", "HocFindLastIndex\20.HocFindLastIndex.csproj", "{EA269790-0159-4B95-915F-BEBDBDB7C134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocRemoveAll", "HocRemoveAll\HocRemoveAll.csproj", "{7E1A082F-D967-4253-9C1A-965910E0F5E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.HocRemoveAll", "HocRemoveAll\21.HocRemoveAll.csproj", "{7E1A082F-D967-4253-9C1A-965910E0F5E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocTrueForAll", "HocTrueForAll\HocTrueForAll.csproj", "{30B8EBAC-0B8A-4DC0-A85C-3FDF0A0C14F9}"
 EndProject
