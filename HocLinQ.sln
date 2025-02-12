@@ -45,9 +45,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.HocRemoveAll", "HocRemov
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22.HocTrueForAll", "HocTrueForAll\22.HocTrueForAll.csproj", "{30B8EBAC-0B8A-4DC0-A85C-3FDF0A0C14F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocSelect", "HocSelect\HocSelect.csproj", "{52D62361-43FA-4193-B6F0-E99C7BE8D5BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23.HocSelect", "HocSelect\23.HocSelect.csproj", "{52D62361-43FA-4193-B6F0-E99C7BE8D5BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocWhere", "HocWhere\HocWhere.csproj", "{AFFBA24D-37A6-4A94-A8BC-807750675288}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.HocWhere", "HocWhere\24.HocWhere.csproj", "{AFFBA24D-37A6-4A94-A8BC-807750675288}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocOrderByOrderDes", "HocOrderByOrderDes\HocOrderByOrderDes.csproj", "{B62B836B-348B-4B03-A6CD-953EAE8BCD5D}"
 EndProject
