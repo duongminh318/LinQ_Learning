@@ -12,52 +12,87 @@ namespace HocOrderByOrderDes
 {
     public partial class Form1 : Form
     {
+
+
+        /*| **Phương thức** | **Chức năng** | => sắp xếp 
+        Cách đúng:
+
+        OrderBy(x => x.Ten) ✅ (Tăng dần)
+        OrderByDescending(x => x.Ten) ✅ (Giảm dần)
+        ThenBy(x => x.Ma) ✅ (Tiêu chí phụ, tăng dần)
+        ThenByDescending(x => x.Ma) ✅ (Tiêu chí phụ, giảm dần)
+        - OrderBy(x => x.Ten).ThenBy(x => x.Ma) ✅ (Tăng dần)
+
+        - OrderBy(x => x.Ten).ThenByDescending(x => x.Ma) ✅ (Giảm dần)
+
+        - OrderByDescending(x => x.Ten).ThenBy(x => x.Ma) ✅ (Tăng dần)
+
+        - cú pháp query :
+
+        var result = from item in collection
+             orderby item.Property
+             select item;
+
+
+
+        
+         */
+
+
+
+        List<int> dsInt;
+        Random rd = new Random();
+        List<SinhVien> dsSv = new List<SinhVien>();
+
         public Form1()
         {
             InitializeComponent();
         }
-        List<int> dsInt;
-        Random rd = new Random();
+
         private void btnTaoDS_Click(object sender, EventArgs e)
         {
             dsInt = new List<int>();
             int n = int.Parse(txtN.Text);
-            for(int i=0;i<n;i++)
+            for (int i = 0; i < n; i++)
             {
                 int x = rd.Next(100);
                 dsInt.Add(x);
             }
             lstN.Items.Clear();
-            dsInt.ForEach(x=> { lstN.Items.Add(x); });
+            dsInt.ForEach(x => lstN.Items.Add(x));
         }
 
+        // Sắp xếp danh sách số nguyên theo thứ tự tăng dần
         private void btnTangDan_Click(object sender, EventArgs e)
         {
             dsInt = dsInt.OrderBy(x => x).ToList();
             lstN.Items.Clear();
-            dsInt.ForEach(x => { lstN.Items.Add(x); });
+            dsInt.ForEach(x => lstN.Items.Add(x));
         }
 
+        // Sắp xếp danh sách số nguyên theo thứ tự giảm dần
         private void btnGiamDan_Click(object sender, EventArgs e)
         {
             dsInt = dsInt.OrderByDescending(x => x).ToList();
             lstN.Items.Clear();
-            dsInt.ForEach(x => { lstN.Items.Add(x); });
+            dsInt.ForEach(x => lstN.Items.Add(x)); // load danh sách số nguyên đã sx lên ListBox
         }
 
+        // Sắp xếp danh sách số nguyên theo thứ tự tăng dần bằng cú pháp LINQ query
         private void button1_Click(object sender, EventArgs e)
         {
             var ds = from x in dsInt
-                    orderby x
-                    select x;
+                     orderby x
+                     select x;
             dsInt = ds.ToList();
             lstN.Items.Clear();
-            dsInt.ForEach(x => { lstN.Items.Add(x); });
+            dsInt.ForEach(x => lstN.Items.Add(x));
         }
-        List<SinhVien> dsSv = new List<SinhVien>();
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            dsSv.Add(new SinhVien() { Ma=1,Ten="Bình"});
+            // Khởi tạo danh sách sinh viên
+            dsSv.Add(new SinhVien() { Ma = 1, Ten = "Bình" });
             dsSv.Add(new SinhVien() { Ma = 2, Ten = "An" });
             dsSv.Add(new SinhVien() { Ma = 3, Ten = "Thoát" });
             dsSv.Add(new SinhVien() { Ma = 4, Ten = "Giải" });
@@ -66,37 +101,43 @@ namespace HocOrderByOrderDes
             HienThiSinhVienLenListView();
         }
 
+        // Sắp xếp danh sách sinh viên theo tên (tăng dần)
         private void button2_Click(object sender, EventArgs e)
         {
             dsSv = dsSv.OrderBy(sv => sv.Ten).ToList();
             HienThiSinhVienLenListView();
         }
+
+        // Hiển thị danh sách sinh viên lên ListView
         void HienThiSinhVienLenListView()
         {
             lvSinhVien.Items.Clear();
             dsSv.ForEach(sv =>
             {
-                ListViewItem lvi = new ListViewItem(sv.Ma + "");
+                ListViewItem lvi = new ListViewItem(sv.Ma.ToString());
                 lvi.SubItems.Add(sv.Ten);
                 lvSinhVien.Items.Add(lvi);
             });
         }
 
+        // Sắp xếp danh sách sinh viên theo tên (cú pháp LINQ query)
         private void button3_Click(object sender, EventArgs e)
         {
             var ds = from sv in dsSv
-                     orderby sv.Ten 
+                     orderby sv.Ten
                      select sv;
             dsSv = ds.ToList();
             HienThiSinhVienLenListView();
         }
 
+        // Sắp xếp danh sách sinh viên theo tên (giảm dần)
         private void button4_Click(object sender, EventArgs e)
         {
             dsSv = dsSv.OrderByDescending(sv => sv.Ten).ToList();
             HienThiSinhVienLenListView();
         }
 
+        // Sắp xếp danh sách sinh viên theo tên (giảm dần) bằng cú pháp LINQ query
         private void button5_Click(object sender, EventArgs e)
         {
             var ds = from sv in dsSv
@@ -106,11 +147,12 @@ namespace HocOrderByOrderDes
             HienThiSinhVienLenListView();
         }
 
+        // Sắp xếp danh sách sinh viên theo tên (tăng dần), nếu trùng thì sắp xếp theo mã (giảm dần)
         private void button6_Click(object sender, EventArgs e)
         {
             dsSv = dsSv
-                .OrderByDescending(sv => sv.Ma)
-                .OrderBy(sv => sv.Ten)                
+                .OrderBy(sv => sv.Ten) // Sắp xếp theo tên (A → Z)
+                .ThenByDescending(sv => sv.Ma) // Nếu trùng tên, sắp xếp theo mã (giảm dần)
                 .ToList();
             HienThiSinhVienLenListView();
         }
