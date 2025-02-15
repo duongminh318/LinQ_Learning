@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
+            this.label1.Size = new System.Drawing.Size(154, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập Giá trị:";
             // 
@@ -50,7 +50,7 @@
             // 
             this.txtGiaTri.Location = new System.Drawing.Point(154, 17);
             this.txtGiaTri.Name = "txtGiaTri";
-            this.txtGiaTri.Size = new System.Drawing.Size(100, 30);
+            this.txtGiaTri.Size = new System.Drawing.Size(100, 36);
             this.txtGiaTri.TabIndex = 1;
             // 
             // btnNhap
@@ -66,10 +66,10 @@
             // lstGiaTri
             // 
             this.lstGiaTri.FormattingEnabled = true;
-            this.lstGiaTri.ItemHeight = 25;
+            this.lstGiaTri.ItemHeight = 29;
             this.lstGiaTri.Location = new System.Drawing.Point(44, 69);
             this.lstGiaTri.Name = "lstGiaTri";
-            this.lstGiaTri.Size = new System.Drawing.Size(210, 204);
+            this.lstGiaTri.Size = new System.Drawing.Size(210, 178);
             this.lstGiaTri.TabIndex = 3;
             // 
             // btnToanSoChan
@@ -90,6 +90,7 @@
             this.btToanSoLe.TabIndex = 4;
             this.btToanSoLe.Text = "Toàn số lẻ?";
             this.btToanSoLe.UseVisualStyleBackColor = true;
+            this.btToanSoLe.Click += new System.EventHandler(this.btToanSoLe_Click);
             // 
             // btnToanSoDuong
             // 
@@ -103,7 +104,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 372);
             this.Controls.Add(this.btnToanSoDuong);
@@ -114,7 +115,7 @@
             this.Controls.Add(this.txtGiaTri);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
