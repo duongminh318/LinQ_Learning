@@ -59,7 +59,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28.HocAny", "HocAny\28.HocA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "29.HocMaxMin", "HocMaxMin\29.HocMaxMin.csproj", "{59BEB87F-9168-4BAE-9A01-81367DACDE9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocFirstOrDefault", "HocFirstOrDefault\HocFirstOrDefault.csproj", "{0F60DCF5-33F0-4B3B-A0F1-164EA10A8C13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30.HocFirstOrDefault", "HocFirstOrDefault\30.HocFirstOrDefault.csproj", "{0F60DCF5-33F0-4B3B-A0F1-164EA10A8C13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocSkip", "HocSkip\HocSkip.csproj", "{99512190-3D97-4D50-BE6E-E9551F1CF5D0}"
 EndProject
