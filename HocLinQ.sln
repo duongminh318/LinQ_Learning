@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.HocWhere", "HocWhere\24.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.HocOrderByOrderDes", "HocOrderByOrderDes\25.HocOrderByOrderDes.csproj", "{B62B836B-348B-4B03-A6CD-953EAE8BCD5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocOfType", "HocOfType\HocOfType.csproj", "{42B3D71A-644D-4BBC-A3D8-EA16715A9B0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26.HocOfType", "HocOfType\26.HocOfType.csproj", "{42B3D71A-644D-4BBC-A3D8-EA16715A9B0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocAll", "HocAll\HocAll.csproj", "{FB5F12E7-087B-46DC-92BE-14FCB0119A72}"
 EndProject

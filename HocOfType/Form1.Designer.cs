@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lvNhanVienGoc = new System.Windows.Forms.ListView();
-            this.btnChinhThuc = new System.Windows.Forms.Button();
-            this.btnThoiVu = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnChinhThuc = new System.Windows.Forms.Button();
+            this.btnThoiVu = new System.Windows.Forms.Button();
             this.lvNhanVienLoc = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,12 +53,21 @@
             this.lvNhanVienGoc.GridLines = true;
             this.lvNhanVienGoc.HideSelection = false;
             this.lvNhanVienGoc.Location = new System.Drawing.Point(15, 3);
-            this.lvNhanVienGoc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lvNhanVienGoc.Margin = new System.Windows.Forms.Padding(6);
             this.lvNhanVienGoc.Name = "lvNhanVienGoc";
             this.lvNhanVienGoc.Size = new System.Drawing.Size(366, 207);
             this.lvNhanVienGoc.TabIndex = 0;
             this.lvNhanVienGoc.UseCompatibleStateImageBehavior = false;
             this.lvNhanVienGoc.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên";
+            this.columnHeader2.Width = 238;
             // 
             // btnChinhThuc
             // 
@@ -78,15 +87,7 @@
             this.btnThoiVu.TabIndex = 1;
             this.btnThoiVu.Text = "Lọc thời vụ";
             this.btnThoiVu.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên";
-            this.columnHeader2.Width = 238;
+            this.btnThoiVu.Click += new System.EventHandler(this.btnThoiVu_Click);
             // 
             // lvNhanVienLoc
             // 
@@ -118,7 +119,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(391, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 25);
+            this.label1.Size = new System.Drawing.Size(55, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã:";
             // 
@@ -127,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(396, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 25);
+            this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên:";
             // 
@@ -135,14 +136,14 @@
             // 
             this.txtMa.Location = new System.Drawing.Point(487, 8);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(187, 30);
+            this.txtMa.Size = new System.Drawing.Size(187, 36);
             this.txtMa.TabIndex = 4;
             // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(487, 70);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(187, 30);
+            this.txtTen.Size = new System.Drawing.Size(187, 36);
             this.txtTen.TabIndex = 4;
             // 
             // chkLaThoiVu
@@ -150,7 +151,7 @@
             this.chkLaThoiVu.AutoSize = true;
             this.chkLaThoiVu.Location = new System.Drawing.Point(487, 123);
             this.chkLaThoiVu.Name = "chkLaThoiVu";
-            this.chkLaThoiVu.Size = new System.Drawing.Size(115, 29);
+            this.chkLaThoiVu.Size = new System.Drawing.Size(145, 33);
             this.chkLaThoiVu.TabIndex = 5;
             this.chkLaThoiVu.Text = "Là thời vụ";
             this.chkLaThoiVu.UseVisualStyleBackColor = true;
@@ -167,7 +168,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 497);
             this.Controls.Add(this.btnLuu);
@@ -181,7 +182,7 @@
             this.Controls.Add(this.lvNhanVienLoc);
             this.Controls.Add(this.lvNhanVienGoc);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
