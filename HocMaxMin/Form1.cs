@@ -12,12 +12,19 @@ namespace HocMaxMin
 {
     public partial class Form1 : Form
     {
+        /*
+         * Max và Min được sử dụng để tìm giá trị lớn nhất hoặc nhỏ nhất trong một tập hợp.
+
+                Max(): Trả về giá trị lớn nhất trong danh sách.
+                Min(): Trả về giá trị nhỏ nhất trong danh sách.
+         */
         public Form1()
         {
             InitializeComponent();
         }
         List<int> dsInt = new List<int>();
         Random rd = new Random();
+        //tạo danh sách n số ngẫu nhiên 
         private void btnTaoDS_Click(object sender, EventArgs e)
         {
             int n = int.Parse(txtN.Text);
