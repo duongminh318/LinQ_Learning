@@ -73,7 +73,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35.HocToArray", "HocToArray
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36.HocToDictionary", "HocToDictionary\36.HocToDictionary.csproj", "{C1B1FAE7-8E31-4962-B9A8-7E1DE74F05B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocToList", "HocToList\HocToList.csproj", "{08275D3C-E975-44A2-91A7-2A7A4107AC3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.HocToList", "HocToList\37.HocToList.csproj", "{08275D3C-E975-44A2-91A7-2A7A4107AC3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapRenLuyen_QLSP", "BaiTapRenLuyen_QLSP\BaiTapRenLuyen_QLSP.csproj", "{10AB5659-3CEA-436E-BE1B-4E167153B7DB}"
 EndProject
