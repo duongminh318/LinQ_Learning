@@ -67,7 +67,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32.HocSkipWhile", "HocSkipW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33.HocTake", "HocTake\33.HocTake.csproj", "{07ECF8A8-CDD4-4823-A78F-1B4DE39F32D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocTakeWhile", "HocTakeWhile\HocTakeWhile.csproj", "{AAE327AE-30DE-4CB3-A51C-4702BEDC0CFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34.HocTakeWhile", "HocTakeWhile\34.HocTakeWhile.csproj", "{AAE327AE-30DE-4CB3-A51C-4702BEDC0CFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocToArray", "HocToArray\HocToArray.csproj", "{9EBB31A4-AB8E-4DA0-BCDE-CC9A1FD2B633}"
 EndProject
