@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{63472264-4A84-4E29-8B6C-E97805BB95F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.HelloWorld", "HelloWorld\3.HelloWorld.csproj", "{63472264-4A84-4E29-8B6C-E97805BB95F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.HocGenerics", "HocGenerics\4.HocGenerics.csproj", "{4604DC52-6118-4807-9852-1256D66D93DE}"
 EndProject
