@@ -12,3 +12,9 @@ learnings linqQ
 - [ ] 10. LINQ Query Expressions
 - [ ] 11. LINQ Query Keywords
 - [ ] 12. LINQ Query Operators
+- [ ] 13. LINQ Query Expressions
+- [ ] 14. LINQ Query Keywords
+- [ ] 15. LINQ Query Operators
+- [ ] 16. LINQ Query Expressions
+- [ ] 17. LINQ Query Keywords
+- [ ] 18. LINQ Query Operators
